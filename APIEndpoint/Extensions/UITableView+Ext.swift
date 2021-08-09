@@ -8,6 +8,10 @@ extension UITableView {
         register(cell.self, forCellReuseIdentifier: cell.className)
     }
     
+    func dequeueReusableOptional<T: UITableViewCell>(class cell: T.Type) -> T? {
+        return dequeueReusableCell(withIdentifier: cell.className) as? T
+    }
+    
     func dequeueReusable<T: UITableViewCell>(class cell: T.Type) -> T {
         guard let aCell = dequeueReusableCell(withIdentifier: cell.className) as? T else {
             fatalError("Couldn't find UITableViewCell for \(cell.className), make sure the cell is registered with table view")

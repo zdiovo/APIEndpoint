@@ -29,7 +29,11 @@ class CurrentViewController: BaseController {
     
     func updateContent(data: Data, timeStamp: TimeInterval) {
         Async.main {
-            UIView.transition(with: self.originDataTextView, duration: 0.35, options: .transitionFlipFromRight, animations: {
+            UIView.transition(
+                with: self.originDataTextView,
+                duration: 0.35,
+                options: .transitionFlipFromRight,
+                animations: {
                 self.originDataTextView.text = data.toString()
             }, completion: nil)
             self.navigationItem.title = timeStamp.toDateString()

@@ -78,8 +78,8 @@ final class CDManage {
     var repeater: Repeater?
     func callPer5s() {
         repeater = Repeater.every(.seconds(5)) { (r) in
-            APIService.fetchGitAPI { (d, t) in
-                self.updateSubject.send((d, t))
+            Service.API.fetchGitAPI { (m) in
+                self.updateSubject.send(m)
             }
         }
         repeater?.start()

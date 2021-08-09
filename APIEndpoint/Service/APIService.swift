@@ -21,7 +21,17 @@ func newJSONDecoder() -> JSONDecoder {
     return decoder
 }
 
-class APIService {
+struct Service {
+    private init() {}
+}
+
+extension Service {
+    struct API {
+        private init() {}
+    }
+}
+
+extension Service.API {
     static func fetchGitAPI(_ handler: @escaping CallBack) {
         let timeStamp = Date.timeStamp
         let task = URLSession.shared.dataTask(with: endpointURL.URL) { (d, _, e) in

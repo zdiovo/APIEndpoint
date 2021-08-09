@@ -10,13 +10,7 @@ import Combine
 import Async
 
 class HistoryTableViewController: UITableViewController {
-    var dataSource = [PassData]() {
-        didSet {
-            if dataSource.count > 0 {
-                reload()
-            }
-        }
-    }
+    var dataSource = [PassData]()
     
     var updateCancellable: AnyCancellable?
     
@@ -31,13 +25,15 @@ class HistoryTableViewController: UITableViewController {
     func makeSink() {
         updateCancellable = CDManage.share.updateSubject.sink(receiveCompletion: { (comp) in }, receiveValue: { [unowned self] in
             self.dataSource.insert($0, at: 0)
+            self.reload()
         })
     }
     
     func reload() {
         Async.main {
-            self.tableView.reloadData()
-            self.tableView.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .left)
+            self.tableView.beginUpdates()
+            self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .top)
+            self.tableView.endUpdates()
         }
     }
 
@@ -54,23 +50,20 @@ class HistoryTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusable(class: UITableViewCell.self, for: indexPath)
-        cell.accessoryType = .disclosureIndicator
-        let obj = dataSource[indexPath.row]
-        cell.textLabel?.text = obj.timeStamp.toDateString()
-        cell.detailTextLabel?.text = obj.data.toString()
+        let cell = tableView.dequeueReusable(class: InsertCell.self, for: indexPath)
+        cell.fill(with: dataSource[indexPath.row])
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let obj = dataSource[indexPath.row]
-        let destinationVC = UIStoryboard.load(controller: DetailViewController.self)
+        let destinationVC = UIStoryboard.load(controller: DetailController.self)
         destinationVC.singlePoint = obj
         navigationController?.show(destinationVC, sender: nil)
     }
 
     deinit {
-        logDebug("deinit: \(HistoryTableViewController.className)")
+        logDebug(#function)
     }
 }

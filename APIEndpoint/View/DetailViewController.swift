@@ -8,24 +8,47 @@
 import UIKit
 import Async
 
-class DetailViewController: BaseController {
-    
+
+class DetailController: UITableViewController {
     var singlePoint: (data: Data, timeStamp: TimeInterval)!
+    var dataSource:[Mirror.Child] = []
     
-    @IBOutlet weak var originTextView: UITextView! {
-        didSet {
-            originTextView.contentInsetAdjustmentBehavior = .never
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if dataSource.count > 0 {
+            return
         }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.navigationItem.title = self.singlePoint?.timeStamp.toDateString()
         if let m = self.singlePoint?.data.transform(to: Endpoint.self) {
-            self.originTextView.text = "\(m)"
+            dataSource = Mirror(reflecting: m).children.compactMap { $0 }
+            self.tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
+            logInfo(dataSource.count)
         }
-        
     }
     
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return dataSource.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusable(class: InsertCell.self, for: indexPath)
+        let obj = dataSource[indexPath.row]
+        cell.titleLabel.text = obj.label
+        cell.contentLabel.text = obj.value as? String
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        logInfo(indexPath)
+    }
+
+    deinit {
+        logDebug(#function)
+    }
 }
