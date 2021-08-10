@@ -18,7 +18,7 @@ class DetailController: UITableViewController {
         if dataSource.count > 0 {
             return
         }
-        if let m = self.singlePoint?.data.transform(to: Endpoint.self) {
+        if let m = self.singlePoint?.data.JSON(to: Endpoint.self) {
             dataSource = Mirror(reflecting: m).children.compactMap { $0 }
             self.tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
             logInfo(dataSource.count)
@@ -36,10 +36,8 @@ class DetailController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusable(class: InsertCell.self, for: indexPath)
-        let obj = dataSource[indexPath.row]
-        cell.titleLabel.text = obj.label
-        cell.contentLabel.text = obj.value as? String
+        let cell = tableView.dequeueReusable(class: DetailCell.self, for: indexPath)
+        cell.fill(with: dataSource[indexPath.row])
         return cell
     }
     

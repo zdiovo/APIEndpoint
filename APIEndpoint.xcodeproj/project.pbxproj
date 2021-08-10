@@ -3,35 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10DF857E260E267700BAE213 /* InsertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF857D260E267700BAE213 /* InsertCell.swift */; };
+		10DF857E260E267700BAE213 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DF857D260E267700BAE213 /* DetailCell.swift */; };
 		981F817026C113CE0071917C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E639FE25E7D8D800797CA7 /* Main.storyboard */; };
+		98E706BD26C264F700EDB820 /* ZippyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 98E706BC26C264F700EDB820 /* ZippyJSON */; };
+		98E706C026C2668E00EDB820 /* JSQCoreDataKit in Frameworks */ = {isa = PBXBuildFile; productRef = 98E706BF26C2668E00EDB820 /* JSQCoreDataKit */; };
+		98E706C326C266F400EDB820 /* Async in Frameworks */ = {isa = PBXBuildFile; productRef = 98E706C226C266F400EDB820 /* Async */; };
+		98E706C626C2682B00EDB820 /* Repeat in Frameworks */ = {isa = PBXBuildFile; productRef = 98E706C526C2682B00EDB820 /* Repeat */; };
+		98F11E4026C22FB800118DB2 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F11E3F26C22FB800118DB2 /* HistoryCell.swift */; };
 		C729A59F25E7E19900EAA355 /* CurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729A59E25E7E19900EAA355 /* CurrentViewController.swift */; };
 		C729A5A625E7E1C300EAA355 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729A5A525E7E1C300EAA355 /* HistoryTableViewController.swift */; };
 		C729A5B825E7E23C00EAA355 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729A5B725E7E23C00EAA355 /* DetailViewController.swift */; };
-		C74133B725E7DB3300F46132 /* JSQCoreDataKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C74133B525E7DB3300F46132 /* JSQCoreDataKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C74133BA25E7DB3300F46132 /* JSQCoreDataKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74133B325E7DB3300F46132 /* JSQCoreDataKit.framework */; };
-		C74133BB25E7DB3300F46132 /* JSQCoreDataKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C74133B325E7DB3300F46132 /* JSQCoreDataKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C74133CA25E7DB4A00F46132 /* Migrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74133C325E7DB4A00F46132 /* Migrate.swift */; };
-		C74133CB25E7DB4A00F46132 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74133C425E7DB4A00F46132 /* CoreDataStack.swift */; };
-		C74133CC25E7DB4A00F46132 /* CoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74133C525E7DB4A00F46132 /* CoreDataModel.swift */; };
-		C74133CD25E7DB4A00F46132 /* CoreDataStackProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74133C625E7DB4A00F46132 /* CoreDataStackProvider.swift */; };
-		C74133CE25E7DB4A00F46132 /* StoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74133C725E7DB4A00F46132 /* StoreType.swift */; };
-		C74133CF25E7DB4A00F46132 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74133C825E7DB4A00F46132 /* NSManagedObjectContext+Extensions.swift */; };
-		C74133D025E7DB4A00F46132 /* CoreDataEntityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74133C925E7DB4A00F46132 /* CoreDataEntityProtocol.swift */; };
-		C74133DD25E7DB6300F46132 /* Repeat.h in Headers */ = {isa = PBXBuildFile; fileRef = C74133DB25E7DB6300F46132 /* Repeat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C74133E025E7DB6300F46132 /* Repeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74133D925E7DB6300F46132 /* Repeat.framework */; };
-		C74133E125E7DB6300F46132 /* Repeat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C74133D925E7DB6300F46132 /* Repeat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C74133EC25E7DB7500F46132 /* Repeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74133E925E7DB7500F46132 /* Repeater.swift */; };
-		C74133ED25E7DB7500F46132 /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74133EA25E7DB7500F46132 /* Throttler.swift */; };
-		C74133EE25E7DB7500F46132 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74133EB25E7DB7500F46132 /* Debouncer.swift */; };
-		C74133FC25E7DB8600F46132 /* Async.h in Headers */ = {isa = PBXBuildFile; fileRef = C74133FA25E7DB8600F46132 /* Async.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C74133FF25E7DB8600F46132 /* Async.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C74133F825E7DB8600F46132 /* Async.framework */; };
-		C741340025E7DB8600F46132 /* Async.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C74133F825E7DB8600F46132 /* Async.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C741340A25E7DB9100F46132 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741340925E7DB9100F46132 /* Async.swift */; };
 		C741341825E7DBDC00F46132 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741341125E7DBDC00F46132 /* String+Ext.swift */; };
 		C741341925E7DBDC00F46132 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741341225E7DBDC00F46132 /* Date+Ext.swift */; };
 		C741341A25E7DBDC00F46132 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C741341325E7DBDC00F46132 /* UITableView+Ext.swift */; };
@@ -56,27 +41,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C74133B825E7DB3300F46132 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C7E639ED25E7D8D800797CA7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C74133B225E7DB3300F46132;
-			remoteInfo = JSQCoreDataKit;
-		};
-		C74133DE25E7DB6300F46132 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C7E639ED25E7D8D800797CA7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C74133D825E7DB6300F46132;
-			remoteInfo = Repeat;
-		};
-		C74133FD25E7DB8600F46132 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C7E639ED25E7D8D800797CA7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C74133F725E7DB8600F46132;
-			remoteInfo = Async;
-		};
 		C7E63A0F25E7D8D900797CA7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C7E639ED25E7D8D800797CA7 /* Project object */;
@@ -100,9 +64,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C74133BB25E7DB3300F46132 /* JSQCoreDataKit.framework in Embed Frameworks */,
-				C74133E125E7DB6300F46132 /* Repeat.framework in Embed Frameworks */,
-				C741340025E7DB8600F46132 /* Async.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,30 +71,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		10DF857D260E267700BAE213 /* InsertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertCell.swift; sourceTree = "<group>"; };
+		10DF857D260E267700BAE213 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		98F11E3F26C22FB800118DB2 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		C729A59E25E7E19900EAA355 /* CurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentViewController.swift; sourceTree = "<group>"; };
 		C729A5A525E7E1C300EAA355 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		C729A5B725E7E23C00EAA355 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		C74133B325E7DB3300F46132 /* JSQCoreDataKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSQCoreDataKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C74133B525E7DB3300F46132 /* JSQCoreDataKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSQCoreDataKit.h; sourceTree = "<group>"; };
-		C74133B625E7DB3300F46132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C74133C325E7DB4A00F46132 /* Migrate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Migrate.swift; sourceTree = "<group>"; };
-		C74133C425E7DB4A00F46132 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		C74133C525E7DB4A00F46132 /* CoreDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataModel.swift; sourceTree = "<group>"; };
-		C74133C625E7DB4A00F46132 /* CoreDataStackProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStackProvider.swift; sourceTree = "<group>"; };
-		C74133C725E7DB4A00F46132 /* StoreType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreType.swift; sourceTree = "<group>"; };
-		C74133C825E7DB4A00F46132 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
-		C74133C925E7DB4A00F46132 /* CoreDataEntityProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataEntityProtocol.swift; sourceTree = "<group>"; };
-		C74133D925E7DB6300F46132 /* Repeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Repeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C74133DB25E7DB6300F46132 /* Repeat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repeat.h; sourceTree = "<group>"; };
-		C74133DC25E7DB6300F46132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C74133E925E7DB7500F46132 /* Repeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repeater.swift; sourceTree = "<group>"; };
-		C74133EA25E7DB7500F46132 /* Throttler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
-		C74133EB25E7DB7500F46132 /* Debouncer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
-		C74133F825E7DB8600F46132 /* Async.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Async.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C74133FA25E7DB8600F46132 /* Async.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Async.h; sourceTree = "<group>"; };
-		C74133FB25E7DB8600F46132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C741340925E7DB9100F46132 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
 		C741341125E7DBDC00F46132 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		C741341225E7DBDC00F46132 /* Date+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		C741341325E7DBDC00F46132 /* UITableView+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
@@ -165,34 +107,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C74133B025E7DB3300F46132 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74133D625E7DB6300F46132 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74133F525E7DB8600F46132 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C7E639F225E7D8D800797CA7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C74133BA25E7DB3300F46132 /* JSQCoreDataKit.framework in Frameworks */,
-				C74133E025E7DB6300F46132 /* Repeat.framework in Frameworks */,
-				C74133FF25E7DB8600F46132 /* Async.framework in Frameworks */,
+				98E706C026C2668E00EDB820 /* JSQCoreDataKit in Frameworks */,
+				98E706C626C2682B00EDB820 /* Repeat in Frameworks */,
+				98E706BD26C264F700EDB820 /* ZippyJSON in Frameworks */,
+				98E706C326C266F400EDB820 /* Async in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,50 +138,14 @@
 		C729A5AC25E7E1DC00EAA355 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C7E639FE25E7D8D800797CA7 /* Main.storyboard */,
 				C729A59E25E7E19900EAA355 /* CurrentViewController.swift */,
 				C729A5A525E7E1C300EAA355 /* HistoryTableViewController.swift */,
 				C729A5B725E7E23C00EAA355 /* DetailViewController.swift */,
-				10DF857D260E267700BAE213 /* InsertCell.swift */,
+				98F11E3F26C22FB800118DB2 /* HistoryCell.swift */,
+				10DF857D260E267700BAE213 /* DetailCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		C74133B425E7DB3300F46132 /* JSQCoreDataKit */ = {
-			isa = PBXGroup;
-			children = (
-				C74133C925E7DB4A00F46132 /* CoreDataEntityProtocol.swift */,
-				C74133C525E7DB4A00F46132 /* CoreDataModel.swift */,
-				C74133C425E7DB4A00F46132 /* CoreDataStack.swift */,
-				C74133C625E7DB4A00F46132 /* CoreDataStackProvider.swift */,
-				C74133C325E7DB4A00F46132 /* Migrate.swift */,
-				C74133C825E7DB4A00F46132 /* NSManagedObjectContext+Extensions.swift */,
-				C74133C725E7DB4A00F46132 /* StoreType.swift */,
-				C74133B525E7DB3300F46132 /* JSQCoreDataKit.h */,
-				C74133B625E7DB3300F46132 /* Info.plist */,
-			);
-			path = JSQCoreDataKit;
-			sourceTree = "<group>";
-		};
-		C74133DA25E7DB6300F46132 /* Repeat */ = {
-			isa = PBXGroup;
-			children = (
-				C74133EB25E7DB7500F46132 /* Debouncer.swift */,
-				C74133E925E7DB7500F46132 /* Repeater.swift */,
-				C74133EA25E7DB7500F46132 /* Throttler.swift */,
-				C74133DB25E7DB6300F46132 /* Repeat.h */,
-				C74133DC25E7DB6300F46132 /* Info.plist */,
-			);
-			path = Repeat;
-			sourceTree = "<group>";
-		};
-		C74133F925E7DB8600F46132 /* Async */ = {
-			isa = PBXGroup;
-			children = (
-				C741340925E7DB9100F46132 /* Async.swift */,
-				C74133FA25E7DB8600F46132 /* Async.h */,
-				C74133FB25E7DB8600F46132 /* Info.plist */,
-			);
-			path = Async;
 			sourceTree = "<group>";
 		};
 		C741341025E7DBCC00F46132 /* Extensions */ = {
@@ -325,9 +211,6 @@
 				C7E639F725E7D8D800797CA7 /* APIEndpoint */,
 				C7E63A1125E7D8D900797CA7 /* APIEndpointTests */,
 				C7E63A1C25E7D8D900797CA7 /* APIEndpointUITests */,
-				C74133B425E7DB3300F46132 /* JSQCoreDataKit */,
-				C74133DA25E7DB6300F46132 /* Repeat */,
-				C74133F925E7DB8600F46132 /* Async */,
 				C7E639F625E7D8D800797CA7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -338,9 +221,6 @@
 				C7E639F525E7D8D800797CA7 /* APIEndpoint.app */,
 				C7E63A0E25E7D8D900797CA7 /* APIEndpointTests.xctest */,
 				C7E63A1925E7D8D900797CA7 /* APIEndpointUITests.xctest */,
-				C74133B325E7DB3300F46132 /* JSQCoreDataKit.framework */,
-				C74133D925E7DB6300F46132 /* Repeat.framework */,
-				C74133F825E7DB8600F46132 /* Async.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,7 +237,6 @@
 				C741343125E7DC7E00F46132 /* CoreData */,
 				C741346825E7DF3E00F46132 /* Model */,
 				C741345925E7DD8D00F46132 /* Utility */,
-				C7E639FE25E7D8D800797CA7 /* Main.storyboard */,
 				C7E63A0425E7D8D900797CA7 /* Assets.xcassets */,
 				C7E63A0625E7D8D900797CA7 /* LaunchScreen.storyboard */,
 				C7E63A0925E7D8D900797CA7 /* Info.plist */,
@@ -385,88 +264,7 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		C74133AE25E7DB3300F46132 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C74133B725E7DB3300F46132 /* JSQCoreDataKit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74133D425E7DB6300F46132 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C74133DD25E7DB6300F46132 /* Repeat.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74133F325E7DB8600F46132 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C74133FC25E7DB8600F46132 /* Async.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		C74133B225E7DB3300F46132 /* JSQCoreDataKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C74133BF25E7DB3300F46132 /* Build configuration list for PBXNativeTarget "JSQCoreDataKit" */;
-			buildPhases = (
-				C74133AE25E7DB3300F46132 /* Headers */,
-				C74133AF25E7DB3300F46132 /* Sources */,
-				C74133B025E7DB3300F46132 /* Frameworks */,
-				C74133B125E7DB3300F46132 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = JSQCoreDataKit;
-			productName = JSQCoreDataKit;
-			productReference = C74133B325E7DB3300F46132 /* JSQCoreDataKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C74133D825E7DB6300F46132 /* Repeat */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C74133E225E7DB6300F46132 /* Build configuration list for PBXNativeTarget "Repeat" */;
-			buildPhases = (
-				C74133D425E7DB6300F46132 /* Headers */,
-				C74133D525E7DB6300F46132 /* Sources */,
-				C74133D625E7DB6300F46132 /* Frameworks */,
-				C74133D725E7DB6300F46132 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Repeat;
-			productName = Repeat;
-			productReference = C74133D925E7DB6300F46132 /* Repeat.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C74133F725E7DB8600F46132 /* Async */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C741340125E7DB8600F46132 /* Build configuration list for PBXNativeTarget "Async" */;
-			buildPhases = (
-				C74133F325E7DB8600F46132 /* Headers */,
-				C74133F425E7DB8600F46132 /* Sources */,
-				C74133F525E7DB8600F46132 /* Frameworks */,
-				C74133F625E7DB8600F46132 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Async;
-			productName = Async;
-			productReference = C74133F825E7DB8600F46132 /* Async.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		C7E639F425E7D8D800797CA7 /* APIEndpoint */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7E63A2225E7D8D900797CA7 /* Build configuration list for PBXNativeTarget "APIEndpoint" */;
@@ -479,11 +277,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				C74133B925E7DB3300F46132 /* PBXTargetDependency */,
-				C74133DF25E7DB6300F46132 /* PBXTargetDependency */,
-				C74133FE25E7DB8600F46132 /* PBXTargetDependency */,
 			);
 			name = APIEndpoint;
+			packageProductDependencies = (
+				98E706BC26C264F700EDB820 /* ZippyJSON */,
+				98E706BF26C2668E00EDB820 /* JSQCoreDataKit */,
+				98E706C226C266F400EDB820 /* Async */,
+				98E706C526C2682B00EDB820 /* Repeat */,
+			);
 			productName = APIEndpoint;
 			productReference = C7E639F525E7D8D800797CA7 /* APIEndpoint.app */;
 			productType = "com.apple.product-type.application";
@@ -533,18 +334,6 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					C74133B225E7DB3300F46132 = {
-						CreatedOnToolsVersion = 12.4;
-						LastSwiftMigration = 1240;
-					};
-					C74133D825E7DB6300F46132 = {
-						CreatedOnToolsVersion = 12.4;
-						LastSwiftMigration = 1240;
-					};
-					C74133F725E7DB8600F46132 = {
-						CreatedOnToolsVersion = 12.4;
-						LastSwiftMigration = 1240;
-					};
 					C7E639F425E7D8D800797CA7 = {
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
@@ -568,6 +357,12 @@
 				Base,
 			);
 			mainGroup = C7E639EC25E7D8D800797CA7;
+			packageReferences = (
+				98E706BB26C264F700EDB820 /* XCRemoteSwiftPackageReference "ZippyJSON" */,
+				98E706BE26C2668E00EDB820 /* XCRemoteSwiftPackageReference "JSQCoreDataKit" */,
+				98E706C126C266F400EDB820 /* XCRemoteSwiftPackageReference "Async" */,
+				98E706C426C2682B00EDB820 /* XCRemoteSwiftPackageReference "Repeat" */,
+			);
 			productRefGroup = C7E639F625E7D8D800797CA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -575,35 +370,11 @@
 				C7E639F425E7D8D800797CA7 /* APIEndpoint */,
 				C7E63A0D25E7D8D900797CA7 /* APIEndpointTests */,
 				C7E63A1825E7D8D900797CA7 /* APIEndpointUITests */,
-				C74133B225E7DB3300F46132 /* JSQCoreDataKit */,
-				C74133D825E7DB6300F46132 /* Repeat */,
-				C74133F725E7DB8600F46132 /* Async */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C74133B125E7DB3300F46132 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74133D725E7DB6300F46132 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74133F625E7DB8600F46132 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C7E639F325E7D8D800797CA7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -631,45 +402,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C74133AF25E7DB3300F46132 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C74133CE25E7DB4A00F46132 /* StoreType.swift in Sources */,
-				C74133CC25E7DB4A00F46132 /* CoreDataModel.swift in Sources */,
-				C74133D025E7DB4A00F46132 /* CoreDataEntityProtocol.swift in Sources */,
-				C74133CA25E7DB4A00F46132 /* Migrate.swift in Sources */,
-				C74133CD25E7DB4A00F46132 /* CoreDataStackProvider.swift in Sources */,
-				C74133CB25E7DB4A00F46132 /* CoreDataStack.swift in Sources */,
-				C74133CF25E7DB4A00F46132 /* NSManagedObjectContext+Extensions.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74133D525E7DB6300F46132 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C74133ED25E7DB7500F46132 /* Throttler.swift in Sources */,
-				C74133EC25E7DB7500F46132 /* Repeater.swift in Sources */,
-				C74133EE25E7DB7500F46132 /* Debouncer.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C74133F425E7DB8600F46132 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C741340A25E7DB9100F46132 /* Async.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C7E639F125E7D8D800797CA7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C729A5A625E7E1C300EAA355 /* HistoryTableViewController.swift in Sources */,
 				C741343F25E7DCF700F46132 /* Endpoint.swift in Sources */,
-				10DF857E260E267700BAE213 /* InsertCell.swift in Sources */,
+				10DF857E260E267700BAE213 /* DetailCell.swift in Sources */,
 				C7CA06A825E7E9D800E985DD /* BaseController.swift in Sources */,
 				C741344725E7DD5300F46132 /* APIService.swift in Sources */,
 				C741341E25E7DBDC00F46132 /* Data+Ext.swift in Sources */,
@@ -677,6 +416,7 @@
 				C729A59F25E7E19900EAA355 /* CurrentViewController.swift in Sources */,
 				C741341D25E7DBDC00F46132 /* NSObject+Ext.swift in Sources */,
 				C729A5B825E7E23C00EAA355 /* DetailViewController.swift in Sources */,
+				98F11E4026C22FB800118DB2 /* HistoryCell.swift in Sources */,
 				C741341B25E7DBDC00F46132 /* TimeInterval+Ext.swift in Sources */,
 				C7E639F925E7D8D800797CA7 /* AppDelegate.swift in Sources */,
 				C7E639FB25E7D8D800797CA7 /* SceneDelegate.swift in Sources */,
@@ -710,21 +450,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C74133B925E7DB3300F46132 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C74133B225E7DB3300F46132 /* JSQCoreDataKit */;
-			targetProxy = C74133B825E7DB3300F46132 /* PBXContainerItemProxy */;
-		};
-		C74133DF25E7DB6300F46132 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C74133D825E7DB6300F46132 /* Repeat */;
-			targetProxy = C74133DE25E7DB6300F46132 /* PBXContainerItemProxy */;
-		};
-		C74133FE25E7DB8600F46132 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C74133F725E7DB8600F46132 /* Async */;
-			targetProxy = C74133FD25E7DB8600F46132 /* PBXContainerItemProxy */;
-		};
 		C7E63A1025E7D8D900797CA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C7E639F425E7D8D800797CA7 /* APIEndpoint */;
@@ -757,177 +482,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C74133BD25E7DB3300F46132 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JSQCoreDataKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.happy.JSQCoreDataKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C74133BE25E7DB3300F46132 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JSQCoreDataKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.happy.JSQCoreDataKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C74133E325E7DB6300F46132 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Repeat/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.happy.Repeat;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C74133E425E7DB6300F46132 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Repeat/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.happy.Repeat;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C741340225E7DB8600F46132 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Async/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.happy.Async;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C741340325E7DB8600F46132 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Async/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.happy.Async;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		C7E63A2025E7D8D900797CA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -979,7 +533,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1034,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1172,33 +726,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C74133BF25E7DB3300F46132 /* Build configuration list for PBXNativeTarget "JSQCoreDataKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C74133BD25E7DB3300F46132 /* Debug */,
-				C74133BE25E7DB3300F46132 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C74133E225E7DB6300F46132 /* Build configuration list for PBXNativeTarget "Repeat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C74133E325E7DB6300F46132 /* Debug */,
-				C74133E425E7DB6300F46132 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C741340125E7DB8600F46132 /* Build configuration list for PBXNativeTarget "Async" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C741340225E7DB8600F46132 /* Debug */,
-				C741340325E7DB8600F46132 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		C7E639F025E7D8D800797CA7 /* Build configuration list for PBXProject "APIEndpoint" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1236,6 +763,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		98E706BB26C264F700EDB820 /* XCRemoteSwiftPackageReference "ZippyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/michaeleisel/ZippyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		98E706BE26C2668E00EDB820 /* XCRemoteSwiftPackageReference "JSQCoreDataKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jessesquires/JSQCoreDataKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		98E706C126C266F400EDB820 /* XCRemoteSwiftPackageReference "Async" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/duemunk/Async.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		98E706C426C2682B00EDB820 /* XCRemoteSwiftPackageReference "Repeat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/Repeat.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		98E706BC26C264F700EDB820 /* ZippyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98E706BB26C264F700EDB820 /* XCRemoteSwiftPackageReference "ZippyJSON" */;
+			productName = ZippyJSON;
+		};
+		98E706BF26C2668E00EDB820 /* JSQCoreDataKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98E706BE26C2668E00EDB820 /* XCRemoteSwiftPackageReference "JSQCoreDataKit" */;
+			productName = JSQCoreDataKit;
+		};
+		98E706C226C266F400EDB820 /* Async */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98E706C126C266F400EDB820 /* XCRemoteSwiftPackageReference "Async" */;
+			productName = Async;
+		};
+		98E706C526C2682B00EDB820 /* Repeat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98E706C426C2682B00EDB820 /* XCRemoteSwiftPackageReference "Repeat" */;
+			productName = Repeat;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		C7E63A0125E7D8D800797CA7 /* APIEndpoint.xcdatamodeld */ = {

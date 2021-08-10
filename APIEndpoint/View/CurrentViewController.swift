@@ -32,11 +32,12 @@ class CurrentViewController: BaseController {
             UIView.transition(
                 with: self.originDataTextView,
                 duration: 0.35,
-                options: .transitionFlipFromRight,
-                animations: {
+                options: .transitionCurlUp)
+            {
                 self.originDataTextView.text = data.toString()
-            }, completion: nil)
-            self.navigationItem.title = timeStamp.toDateString()
+            } completion: { _ in
+                self.navigationItem.title = timeStamp.toDateString()
+            }
         }
     }
 }

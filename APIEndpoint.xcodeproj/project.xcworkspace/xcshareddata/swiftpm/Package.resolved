@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Async",
+        "repositoryURL": "https://github.com/duemunk/Async.git",
+        "state": {
+          "branch": null,
+          "revision": "a66d1a6efce6c1296ab228bdc3ec7da2b8968138",
+          "version": "2.1.0"
+        }
+      },
+      {
+        "package": "JJLISO8601DateFormatter",
+        "repositoryURL": "https://github.com/michaeleisel/JJLISO8601DateFormatter",
+        "state": {
+          "branch": null,
+          "revision": "99fadf2e6425a0f827b1b485ea60bc2b7ecdd22c",
+          "version": "0.1.4"
+        }
+      },
+      {
+        "package": "JSQCoreDataKit",
+        "repositoryURL": "https://github.com/jessesquires/JSQCoreDataKit.git",
+        "state": {
+          "branch": null,
+          "revision": "de9737128e0f8e1864963f7b867a696b723f1a9a",
+          "version": "9.0.3"
+        }
+      },
+      {
+        "package": "Repeat",
+        "repositoryURL": "https://github.com/malcommac/Repeat.git",
+        "state": {
+          "branch": null,
+          "revision": "9df757d0936c15dfd9d01067766fab87e927f838",
+          "version": "0.6.0"
+        }
+      },
+      {
+        "package": "ZippyJSON",
+        "repositoryURL": "https://github.com/michaeleisel/ZippyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "1ab389998592d038a60a3ca71aa7554d0e84ab4a",
+          "version": "1.2.4"
+        }
+      },
+      {
+        "package": "ZippyJSONCFamily",
+        "repositoryURL": "https://github.com/michaeleisel/ZippyJSONCFamily",
+        "state": {
+          "branch": null,
+          "revision": "c55123b23f0faa898b22bf1b967e72a2df51fdb4",
+          "version": "1.2.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -50,7 +50,7 @@ class HistoryTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusable(class: InsertCell.self, for: indexPath)
+        let cell = tableView.dequeueReusable(class: HistoryCell.self, for: indexPath)
         cell.fill(with: dataSource[indexPath.row])
         return cell
     }
